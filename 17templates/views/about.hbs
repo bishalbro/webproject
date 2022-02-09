@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>headerlinks}}
+</head>
+<body>
+
+	<!-- express le yo vanxa ki app kya karo vai pura ka pura static website uthao
+	 public folder ke uder rakhdo and main within a ek second ek line ko code
+	se run kardunga -->
+
+	{{!-- yedi partials ko use garyo vane --}}
+
+	{{>navbar}}
+
+	<!-- main header -->
+	<div class="container-fluid main-header">
+		<div class="row">
+			<div class="col-md-10 col-12 mx-auto">
+
+				<div class="row">
+					<!-- for right side -->
+					<div class="col-md-6 col-12 main_header_right align-items-center">
+						<figure>
+							<img src="image/site4.jpg" alt="site4" class="img-fluid" title="Bishal Shrestha">
+						</figure>
+			
+					</div>
+					
+					<!-- for left side -->
+					<div class="col-md-6 col-12 main_header_left">
+						<p>welcome to weather app</p>
+						<!-- spane le line lai break gardai na continue nai rahanchha -->
+						<h1>I Am A <span class="text-color">Mern Stack Developer</span> Youtuber And Frelancer Info Of Your City</h1>
+						<a href="https://lyricalsansar.com/" target="_bishal"><button>About Me</button></a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main header -->
+{{>footer}}
+
+
+	
+</body>
+</html>

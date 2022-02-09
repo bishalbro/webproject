@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>headerlinks}}
+</head>
+<body>
+
+	<!-- express le yo vanxa ki app kya karo vai pura ka pura static website uthao
+	 public folder ke uder rakhdo and main within a ek second ek line ko code
+	se run kardunga -->
+
+	{{!-- yedi partials ko use garyo vane --}}
+
+	{{>navbar}}
+
+	<!-- main header -->
+	<div class="container-fluid main-header">
+		<div class="row">
+			<div class="col-md-10 col-12 mx-auto">
+
+				<div class="row align-items-center">
+					<!-- for left side -->
+					<div class="col-md-12 col-12 main_header_left align-items-center">
+						<figure class="errorImg">
+							<img src="image/404.jpg" alt="site4" class="img-fluid" title="Bishal Shrestha">
+						</figure>
+			
+						<p>welcome to bishal technical world</p>
+											{{!--props lai access garchhau jun error page ma object bhotira ko
+											  --}}
+						<h1>{{errorMsg}}</h1>
+						<a href="/"><button>Go Back</button></a>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main header -->
+{{>footer}}
+
+
+	
+</body>
+</html>
