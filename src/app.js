@@ -65,7 +65,7 @@ app.get('*',(req, res) =>{
 	// res.send("404 error page oops");
 	//yaha chahe toh object pani pass garna sakxau
 	res.render("404error",{
-		errorMsg:"oops page not found!",
+		errorMsg:"oops page not found, click here to go back",
 	});
 
 });
